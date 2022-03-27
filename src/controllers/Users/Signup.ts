@@ -35,7 +35,7 @@ export default async (req: Request, res: Response) => {
 				console.log(`Access Token generated for User : ${email}`)
 				return res.status(200).json({
 					status: 'Success',
-					message: 'Admin account was created successfully.',
+					message: 'User account was created successfully.',
 					token: encoded,
 					name: newUser.name,
 					email: newUser.email,
