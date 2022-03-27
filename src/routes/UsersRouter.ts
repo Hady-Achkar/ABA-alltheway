@@ -1,8 +1,9 @@
 import {Router} from 'express'
-import {CreateUser} from '../controllers'
+import {CreateUser, Signin} from '../controllers'
 
 const router = Router()
 
-router.route('/').post(CreateUser)
+router.route('/signup').post(CreateUser)
+router.route('/signin').post(Signin)
 
 export default router
